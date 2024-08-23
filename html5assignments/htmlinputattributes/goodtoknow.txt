@@ -1,0 +1,39 @@
+Try applying as many attributes and restrictions and observe the form behavior
+
+Explanation of the Attributes and Restrictions:
+maxlength: Limits the number of characters in the text input and textarea.
+
+Example: <input type="text" maxlength="15">
+size: Defines the width of the input field in characters.
+
+Example: <input type="text" size="30">
+required: Makes the input field mandatory for form submission.
+
+Example: <input type="email" required>
+min and max: Set minimum and maximum values for numeric inputs and range inputs.
+
+Example: <input type="number" min="18" max="99">
+Example: <input type="range" min="0" max="100">
+readonly: Makes the input field non-editable but still selectable.
+
+Example: <input type="date" readonly>
+value: Sets a default value for the input field.
+
+Example: <input type="color" value="#ff0000">
+pattern: Specifies a regex pattern the input value must match (for email validation in this case).
+
+Example: <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+multiple: Allows multiple files to be selected for upload.
+
+Example: <input type="file" multiple>
+disabled: Disables the input field or button, making it unselectable and uneditable.
+
+Example: <input type="submit" disabled>
+maxlength for Textarea: Limits the number of characters in a textarea.
+
+Example: <textarea maxlength="200">
+
+
+Understand the difference between target:blank and target:self.
+target="_blank": Opens the link in a new tab or window.
+target="_self": Opens the link in the same tab or window (default behavior).

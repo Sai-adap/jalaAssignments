@@ -1,0 +1,35 @@
+1)Difference between HTML, HTML5, CSS and JAVA Script
+HTML: The basic markup language for structuring web pages (e.g., headings, paragraphs, links).
+
+HTML5: The latest version of HTML with new features like semantic tags, multimedia elements, and APIs.
+
+CSS: Styles and designs the appearance of HTML elements (e.g., colors, fonts, layouts).
+
+JavaScript: A programming language that adds interactivity and dynamic behavior to web pages (e.g., handling events, animations).
+
+2)Difference between span and div
+
+The main differences between <span> and <div> are their usage and how they affect the layout of a webpage:
+
+<div> (Division)
+Type: Block-level element.
+Usage: Used to group larger sections of content or elements together. Commonly used for layout purposes.
+Behavior: Takes up the full width available (from left to right) and starts on a new line.
+Example:
+html
+Copy code
+<div>
+    <h1>Title</h1>
+    <p>Some content in a paragraph.</p>
+</div>
+<span>
+Type: Inline-level element.
+Usage: Used to group small pieces of text or elements within a line, often for applying styles or scripting.
+Behavior: Does not start on a new line; it only takes up as much width as necessary, staying within the flow of surrounding text.
+Example:
+html
+Copy code
+<p>This is a <span style="color: red;">red word</span> in a sentence.</p>
+Summary:
+<div>: Block-level, used for larger sections, starts on a new line.
+<span>: Inline-level, used for smaller pieces of content within a line, stays in the flow of text.

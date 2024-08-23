@@ -1,0 +1,53 @@
+#Develop a web page using target attribute
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Attribute Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        a {
+            display: block;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Target Attribute Example</h1>
+
+    <!-- Links with target attribute -->
+    <a href="https://www.example.com" target="_blank">Open Example.com in a new tab</a>
+    <a href="https://www.wikipedia.org" target="_self">Open Wikipedia in the same tab</a>
+    <a href="https://www.google.com" target="_parent">Open Google in the parent frame</a>
+    <a href="https://www.github.com" target="_top">Open GitHub and break out of frames</a>
+
+    <!-- Example with an iframe -->
+    <iframe src="https://www.example.com" name="iframe_a"></iframe>
+    <p><a href="https://www.wikipedia.org" target="iframe_a">Open Wikipedia in the iframe above</a></p>
+
+    <!-- Form with target attribute -->
+    <form action="https://www.example.com/search" method="get" target="_blank">
+        <label for="search">Search Example.com:</label>
+        <input type="text" id="search" name="q" placeholder="Enter search term">
+        <input type="submit" value="Search">
+    </form>
+
+</body>
+</html>
+

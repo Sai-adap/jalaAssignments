@@ -1,0 +1,67 @@
+#Develop a web page with non-semantic elements <div> and <span>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Non-Semantic Elements Example</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f4f4f4;
+            }
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .header {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .content {
+                margin: 20px 0;
+            }
+            .highlight {
+                color: #FF5722;
+                font-weight: bold;
+            }
+            .footer {
+                background-color: #eee;
+                padding: 10px;
+                text-align: center;
+                border-radius: 5px;
+            }
+            .info {
+                background-color: #d9edf7;
+                padding: 5px;
+                border-left: 5px solid #5bc0de;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="header">
+                <h1>Welcome to My Website</h1>
+            </div>
+            
+            <div class="content">
+                <p>Here is some <span class="highlight">important information</span> that you should read carefully.</p>
+                <p class="info">This is an informational box styled using a <span>span</span> element.</p>
+            </div>
+            
+            <div class="footer">
+                <p>&copy; 2024 My Website</p>
+            </div>
+        </div>
+    
+    </body>
+    </html>
+    

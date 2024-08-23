@@ -1,0 +1,71 @@
+#Use I-frames and Marquee in your webpage.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Frames and Marquee Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .marquee-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Webpage with I-Frames and Marquee</h1>
+
+    <!-- Marquee (Deprecated) -->
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        This is a scrolling text using the deprecated <marquee> tag. It scrolls from right to left.
+    </marquee>
+
+    <!-- Marquee with CSS Animation -->
+    <div class="marquee-container">
+        <div class="marquee-text">
+            This is a scrolling text using CSS animation. It also scrolls from right to left, but it's the recommended way to create scrolling effects.
+        </div>
+    </div>
+
+    <!-- I-Frame Example -->
+    <iframe src="https://www.example.com" title="Example Website"></iframe>
+
+</body>
+</html>

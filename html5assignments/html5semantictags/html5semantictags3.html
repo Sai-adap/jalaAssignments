@@ -1,0 +1,135 @@
+#Use all the HTML5 tags and develop a web page
+article, aside, figcaption, figure,footer,header, hgroup,mark,nav, section,time
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tags Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        aside {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            font-style: italic;
+            text-align: center;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My HTML5 Web Page</h1>
+        <hgroup>
+            <h2>Subheading for the Web Page</h2>
+            <h3>Additional Details</h3>
+        </hgroup>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home">
+            <article>
+                <h2>Main Article Heading</h2>
+                <time datetime="2024-08-23">August 23, 2024</time>
+                <p>This is the main content of the article. It provides information about the topic of the article and includes several important details.</p>
+                <figure>
+                    <img src="https://via.placeholder.com/800x400" alt="Sample Image">
+                    <figcaption>Sample Image Caption</figcaption>
+                </figure>
+                <p>The article continues with more information and insights into the subject matter. <mark>Highlighted text</mark> helps to emphasize important points.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Related Information</h2>
+            <p>This section contains additional information related to the main article. It could include links, summaries, or other relevant content.</p>
+        </aside>
+
+        <section id="about">
+            <article>
+                <h2>About Us</h2>
+                <p>Learn more about our organization and its mission. This section provides background information and details about what we do.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <article>
+                <h2>Contact Us</h2>
+                <p>Get in touch with us through the contact details provided here. We welcome inquiries and feedback from our visitors.</p>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My HTML5 Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

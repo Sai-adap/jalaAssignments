@@ -1,0 +1,32 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Default background color */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style for the table */
+.bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Black border for the table */
+}
+
+/* Style for table cells */
+.bordered-table th, .bordered-table td {
+    border: 1px solid black; /* Black border for table cells */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Hover effect for the table */
+.bordered-table:hover {
+    background-color: #f0f0f0; /* Change background color when hovering over the table */
+}
+
+/* Optional: hover effect on table cells */
+.bordered-table tbody tr:hover {
+    background-color: #e0e0e0; /* Change row color on hover */
+}

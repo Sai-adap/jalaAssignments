@@ -1,0 +1,12 @@
+***Importance of HTML DOCTYPE?
+     The <!DOCTYPE> declaration in HTML is important because it informs the web browser about the version of HTML being used,
+    which in turn determines how the browser should render the page. It helps trigger "standards mode," 
+    ensuring that the page is displayed according to modern web standards, avoiding "quirks mode," which emulates older, 
+    non-standard behaviors for compatibility with outdated web content. In HTML5, the <!DOCTYPE html> declaration is used, 
+    and it's essential for consistent and predictable rendering across different browsers.
+
+***What is the syntax to link external style sheet?
+   <link rel="stylesheet" href="styles.css">
+   <link>: The HTML element used to link external resources.
+    rel="stylesheet": Specifies the relationship of the linked file as a stylesheet.
+    href="styles.css": Provides the path to the CSS file.

@@ -1,0 +1,36 @@
+/* Styles for smooth scrolling */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Basic styling for header and links */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.scroll-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.scroll-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling for content sections */
+.content {
+    padding: 60px 20px; /* Padding to make space for the fixed header */
+    text-align: center;
+}
+
+.spacer {
+    height: 2000px; /* Create enough space to scroll down */
+}

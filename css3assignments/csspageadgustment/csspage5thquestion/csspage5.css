@@ -1,0 +1,16 @@
+/* Styling for the element with multiple backgrounds */
+.multi-background {
+    height: 400px; /* Set a height for demonstration */
+    background-image: url('image1.jpg'), url('image2.jpg'), url('image3.jpg'); /* Multiple background images */
+    background-position: center, left bottom, right top; /* Positioning for each image */
+    background-size: cover, contain, 50%; /* Size for each image */
+    background-repeat: no-repeat; /* Prevent repetition of images */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1, p {
+    margin: 0;
+}

@@ -1,0 +1,56 @@
+/* Basic container styling */
+.container {
+    position: relative; /* Make container a positioning context */
+    height: 600px; /* Height to demonstrate positioning */
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Static positioning (default) */
+.static-box {
+    background-color: #d4edda;
+    padding: 10px;
+    border: 1px solid #b2d8b2;
+    margin: 10px 0;
+    /* No position property needed for static */
+}
+
+/* Relative positioning */
+.relative-box {
+    position: relative;
+    background-color: #d1ecf1;
+    padding: 10px;
+    border: 1px solid #a2c2e2;
+    margin: 10px 0;
+    top: 20px; /* Moves element down from its normal position */
+    left: 20px; /* Moves element right from its normal position */
+}
+
+/* Absolute positioning */
+.absolute-box {
+    position: absolute;
+    background-color: #fff3cd;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    top: 100px; /* Positioned 100px from the top of the nearest positioned ancestor */
+    right: 20px; /* Positioned 20px from the right of the nearest positioned ancestor */
+}
+
+/* Fixed positioning */
+.fixed-box {
+    position: fixed;
+    background-color: #f8d7da;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    bottom: 20px; /* Positioned 20px from the bottom of the viewport */
+    left: 20px; /* Positioned 20px from the left of the viewport */
+}
+
+/* Sticky positioning */
+.sticky-box {
+    position: sticky;
+    background-color: #e2e3e5;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    top: 0; /* Sticky when 0px from the top of the viewport */
+}

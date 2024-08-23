@@ -1,0 +1,40 @@
+/*Develop a page and set the height:(in pixels and %) and width:(in pixels and %) on 
+elements.*/
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Box with dimensions in pixels */
+.box-pixels {
+    height: 200px;  /* Fixed height of 200 pixels */
+    width: 300px;   /* Fixed width of 300 pixels */
+    background-color: #ffcc00;  /* Yellow background */
+    margin: 20px auto;  /* Center the box horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Box with dimensions in percentages */
+.box-percent {
+    height: 50%;    /* Height is 50% of the viewport height */
+    width: 70%;     /* Width is 70% of the viewport width */
+    background-color: #33ccff;  /* Light blue background */
+    margin: 20px auto;  /* Center the box horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Box with mixed dimensions */
+.box-mixed {
+    height: 150px;  /* Fixed height of 150 pixels */
+    width: 50%;     /* Width is 50% of the viewport width */
+    background-color: #99cc33;  /* Light green background */
+    margin: 20px auto;  /* Center the box horizontally */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,20 @@
+/*Create a different page with the width, style and color of the 4 border-style(set 
+different borders on each side with different patterns)*/
+/* Styles for the border-box */
+.border-box {
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+    /* Different border styles, widths, and colors on each side */
+    border-top: 5px solid #ff5733;    /* Solid border on the top, 5px wide, red-orange color */
+    border-right: 10px dotted #33ff57; /* Dotted border on the right, 10px wide, green color */
+    border-bottom: 15px dashed #3357ff; /* Dashed border on the bottom, 15px wide, blue color */
+    border-left: 20px double #ff33a1;  /* Double border on the left, 20px wide, pink color */
+    
+    /* Optional: Adding a background color */
+    background-color: #f0f0f0;
+    border-radius: 8px; /* Rounds the corners of the box */
+}

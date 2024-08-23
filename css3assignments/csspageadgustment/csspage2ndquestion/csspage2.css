@@ -1,0 +1,53 @@
+/* Styles for visibility examples */
+.visibility-examples div {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.visible {
+    visibility: visible; /* Element is visible */
+    background-color: #d4edda; /* Light green background */
+}
+
+.hidden {
+    visibility: hidden; /* Element is hidden but still occupies space */
+    background-color: #f8d7da; /* Light red background */
+}
+
+.collapse {
+    visibility: collapse; /* Element is removed and does not occupy space (useful for tables) */
+    background-color: #fff3cd; /* Light yellow background */
+}
+
+/* Styles for display examples */
+.display-examples div, .display-list-item li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.display-none {
+    display: none; /* Element is not displayed and does not occupy space */
+    background-color: #f8d7da; /* Light red background */
+}
+
+.display-inline {
+    display: inline; /* Element is displayed inline */
+    background-color: #d4edda; /* Light green background */
+}
+
+.display-block {
+    display: block; /* Element is displayed as a block */
+    background-color: #d1ecf1; /* Light blue background */
+}
+
+.display-contents {
+    display: contents; /* Element itself is not rendered, but its children are */
+    background-color: #fff3cd; /* Light yellow background */
+}
+
+.display-list-item {
+    display: list-item; /* Element is rendered as a list item */
+    background-color: #cce5ff; /* Light blue background */
+}

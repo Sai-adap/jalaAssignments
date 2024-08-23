@@ -1,0 +1,18 @@
+/* Basic styling for the image container */
+.image-container {
+    text-align: center; /* Center image horizontally */
+    margin: 20px;
+}
+
+/* Styling for the image with opacity */
+.transparent-image {
+    width: 300px; /* Set width of the image */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.5; /* Set opacity level (0 is fully transparent, 1 is fully opaque) */
+    transition: opacity 0.3s; /* Smooth transition for opacity changes */
+}
+
+/* Optional: Hover effect to change opacity */
+.transparent-image:hover {
+    opacity: 1; /* Fully opaque on hover */
+}

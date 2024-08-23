@@ -1,0 +1,54 @@
+/*Develop a page with different font-styles, font-size, font-family, colors and text-align*/
+/* Styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* General section styles */
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Serif font styles */
+.serif {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: left;
+    background-color: #ecf0f1;
+}
+
+/* Sans-serif font styles */
+.sans-serif {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #2980b9;
+    text-align: center;
+    background-color: #d6eaf8;
+}
+
+/* Monospace font styles */
+.monospace {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #27ae60;
+    text-align: right;
+    background-color: #eafaf1;
+}
+
+/* Cursive font styles */
+.cursive {
+    font-family: "Brush Script MT", cursive;
+    font-size: 22px;
+    color: #c0392b;
+    text-align: justify;
+    background-color: #f9ebea;
+}

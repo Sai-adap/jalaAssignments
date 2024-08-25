@@ -1,0 +1,7 @@
+**Debugging in JavaScript.
+Debugging in JavaScript refers to the process of identifying, analyzing, and fixing errors or issues in JavaScript code. It involves using 
+various techniques and tools to understand why a piece of code isn't working as expected and making corrections to ensure it functions correctly.
+
+**What are Cookies?
+Cookies are small data files stored on a user's device by a web browser. They help websites remember user preferences, manage sessions, and track user behavior. Cookies are sent with every HTTP request to the server. 
+They can be set to expire after a certain period or be session-based. Cookies enhance user experience but can raise privacy and security concerns.

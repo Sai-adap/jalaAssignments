@@ -1,0 +1,39 @@
+Write a program for COUNTER. Whenever we click on a "Count" button, value 
+should increment.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Example</title>
+    <style>
+        #counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #countButton {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Example</h1>
+    <div id="counter">0</div>
+    <button id="countButton">Count</button>
+
+    <script>
+        // Initial counter value
+        let count = 0;
+
+        // Function to update the counter
+        function updateCounter() {
+            count++;
+            document.getElementById('counter').textContent = count;
+        }
+
+        // Add event listener to the button
+        document.getElementById('countButton').addEventListener('click', updateCounter);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+Invoke a function using call() and apply(). Also Spot the difference between them
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Invocation Example</title>
+</head>
+<body>
+    <h1>Function Invocation using call() and apply()</h1>
+    <p id="result"></p>
+
+    <script>
+        // Define an object
+        const person = {
+            firstName: "sai kumar",
+            lastName: "Adapa"
+        };
+
+        // Define a function that uses `this`
+        function greet(greeting, punctuation) {
+            return `${greeting}, ${this.firstName} ${this.lastName}${punctuation}`;
+        }
+
+        // Invoke the function using `call()`
+        const callResult = greet.call(person, "Hello", "!");
+        
+        // Invoke the function using `apply()`
+        const applyResult = greet.apply(person, ["Hi", "."]);
+
+        // Display results
+        document.getElementById('result').innerHTML = `
+            Using call(): ${callResult}<br>
+            Using apply(): ${applyResult}
+        `;
+    </script>
+</body>
+</html>

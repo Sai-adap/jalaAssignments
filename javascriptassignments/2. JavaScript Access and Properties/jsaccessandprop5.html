@@ -1,0 +1,105 @@
+Add some more properties to an existing function using object prototypes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter with Prototype Properties</title>
+    <style>
+        #counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #countButton, #resetButton, #doubleButton, #setCustomButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Example with Prototype Properties</h1>
+    <div id="counter">0</div>
+    <button id="countButton">Increment</button>
+    <button id="resetButton">Reset</button>
+    <button id="doubleButton">Double</button>
+    <input type="number" id="customValue" placeholder="Enter value" />
+    <button id="setCustomButton">Set Custom Value</button>
+
+    <script>
+        // Define the Counter class
+        class Counter {
+            constructor() {
+                this._count = 0;
+            }
+
+            // Getter for count
+            get count() {
+                return this._count;
+            }
+
+            // Setter for count
+            set count(value) {
+                if (value >= 0) {
+                    this._count = value;
+                }
+            }
+
+            // Method to increment count
+            increment() {
+                this.count += 1;
+            }
+        }
+
+        // Add additional properties and methods using prototypes
+        Counter.prototype.reset = function() {
+            this.count = 0;
+        };
+
+        Counter.prototype.double = function() {
+            this.count *= 2;
+        };
+
+        // Add additional properties
+        Counter.prototype.customValue = 0;
+        
+        // Method to set a custom value
+        Counter.prototype.setCustomValue = function(value) {
+            this.count = value;
+        };
+
+        // Create an instance of Counter
+        const counter = new Counter();
+
+        // Function to update the counter display
+        function updateCounterDisplay() {
+            document.getElementById('counter').textContent = counter.count;
+        }
+
+        // Event listeners for the buttons
+        document.getElementById('countButton').addEventListener('click', () => {
+            counter.increment();
+            updateCounterDisplay();
+        });
+
+        document.getElementById('resetButton').addEventListener('click', () => {
+            counter.reset();
+            updateCounterDisplay();
+        });
+
+        document.getElementById('doubleButton').addEventListener('click', () => {
+            counter.double();
+            updateCounterDisplay();
+        });
+
+        document.getElementById('setCustomButton').addEventListener('click', () => {
+            const customValue = parseInt(document.getElementById('customValue').value, 10);
+            counter.setCustomValue(customValue);
+            updateCounterDisplay();
+        });
+
+        // Initialize the display
+        updateCounterDisplay();
+    </script>
+</body>
+</html>

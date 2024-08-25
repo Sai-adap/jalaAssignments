@@ -1,0 +1,73 @@
+# Create a table and apply table-layout as fixed and none
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout Example</title>
+    <style>
+        /* Table with table-layout: fixed */
+        .fixed-table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .fixed-table th, .fixed-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Table with table-layout: auto (default behavior) */
+        .auto-table {
+            table-layout: auto;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .auto-table th, .auto-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table with table-layout: fixed</h2>
+    <table class="fixed-table">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>This is a long text that should be truncated in fixed layout</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+
+    <h2>Table with table-layout: auto (default)</h2>
+    <table class="auto-table">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>This is a long text that should not be truncated in auto layout</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+    </table>
+</body>
+</html>

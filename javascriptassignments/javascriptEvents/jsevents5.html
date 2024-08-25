@@ -1,0 +1,44 @@
+Create a JSON object and access it using dot notation.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Object Example</title>
+</head>
+<body>
+    <h1>Access JSON Object Using Dot Notation</h1>
+    <div id="result"></div>
+
+    <script>
+        // Create a JSON object
+        const person = {
+            name: "Alice",
+            age: 30,
+            address: {
+                street: "123 Main St",
+                city: "Wonderland",
+                zip: "12345"
+            },
+            hobbies: ["reading", "traveling", "gardening"]
+        };
+
+        // Accessing properties using dot notation
+        const name = person.name;
+        const age = person.age;
+        const street = person.address.street;
+        const city = person.address.city;
+        const firstHobby = person.hobbies[0];
+
+        // Displaying the accessed properties
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = `
+            <p>Name: ${name}</p>
+            <p>Age: ${age}</p>
+            <p>Street: ${street}</p>
+            <p>City: ${city}</p>
+            <p>First Hobby: ${firstHobby}</p>
+        `;
+    </script>
+</body>
+</html>

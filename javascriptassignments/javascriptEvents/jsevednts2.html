@@ -1,0 +1,50 @@
+Show the javascript validation. When you click submit, the text box doesn't need to 
+be empty.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 16px;
+        }
+        #submitButton {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation Example</h1>
+    <form id="myForm">
+        <label for="textBox">Enter Text:</label>
+        <input type="text" id="textBox" name="textBox" />
+        <button type="button" id="submitButton">Submit</button>
+        <div id="errorMessage" class="error"></div>
+    </form>
+
+    <script>
+        // Function to validate the text box
+        function validateForm() {
+            const textBox = document.getElementById('textBox');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (textBox.value.trim() === '') {
+                // Show error message if the text box is empty
+                errorMessage.textContent = 'The text box cannot be empty.';
+            } else {
+                // Clear the error message and proceed
+                errorMessage.textContent = '';
+                alert('Form submitted successfully!');
+                // You can add additional logic for form submission here
+            }
+        }
+
+        // Add event listener to the submit button
+        document.getElementById('submitButton').addEventListener('click', validateForm);
+    </script>
+</body>
+</html>

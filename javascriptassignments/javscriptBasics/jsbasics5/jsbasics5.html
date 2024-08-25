@@ -1,0 +1,33 @@
+Write a program with variable hoisting(initialization first then declaration)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Hoisting Example</title>
+</head>
+<body>
+    <h1>Variable Hoisting Demonstration</h1>
+    <p id="result"></p>
+
+    <script>
+        // Function to demonstrate variable hoisting
+        function demonstrateHoisting() {
+            // Initialize variable before declaration
+            result = "Initial value before declaration";
+
+            // Variable declaration using var
+            var result;
+
+            // Set a new value to the variable after declaration
+            result = "Value after declaration";
+
+            // Display the result
+            document.getElementById('result').textContent = result;
+        }
+
+        // Call the function to see the result
+        demonstrateHoisting();
+    </script>
+</body>
+</html>

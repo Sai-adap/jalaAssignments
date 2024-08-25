@@ -1,0 +1,36 @@
+How console.log() can be used for Debugging
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console.log Debugging</title>
+</head>
+<body>
+    <h1>Console.log Debugging Example</h1>
+    <button id="testButton">Click Me</button>
+
+    <script>
+        // Function to debug
+        function debugExample() {
+            let message = 'Hello, World!';
+            console.log('Message:', message); // Log the message variable
+            
+            let number = 5;
+            console.log('Number before increment:', number); // Log number before increment
+            
+            number += 1;
+            console.log('Number after increment:', number); // Log number after increment
+            
+            let person = {
+                name: 'Alice',
+                age: 30
+            };
+            console.log('Person object:', person); // Log the person object
+        }
+
+        // Add event listener to the button
+        document.getElementById('testButton').addEventListener('click', debugExample);
+    </script>
+</body>
+</html>

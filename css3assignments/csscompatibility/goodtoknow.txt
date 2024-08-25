@@ -1,0 +1,40 @@
+Understand table structure?
+In HTML, a table is used to organize data into rows and columns, similar to a spreadsheet. The table structure is composed of several key elements that define the layout and content of the table. Here's a detailed breakdown of the table structure in HTML:
+
+Basic Table Structure
+A basic HTML table is made up of the following elements:
+
+<table>: The container for all table-related elements.
+<thead>: The table header, which contains the headings of the columns.
+<tbody>: The body of the table, where the actual data rows are placed.
+<tfoot>: The table footer, often used for summary rows.
+<tr>: A table row, used to group table cells into a single row.
+<th>: A table header cell, which defines the header of a column or row.
+<td>: A table data cell, which contains the data for a specific cell in the table.
+
+Explain cell padding and cell spacing.
+Cell Padding
+Definition: The space between the content of a cell and its border.
+Purpose: Adds space inside the cell, making the content less cramped.
+CSS Property: padding.
+Cell Spacing
+Definition: The space between the borders of adjacent cells.
+Purpose: Creates a gap between cells, making the table look more open.
+CSS Property: border-spacing.
+
+What are form attributes?
+Here's a short summary of form attributes:
+
+action: URL to send form data.
+method: HTTP method (GET or POST).
+enctype: Data encoding type (e.g., multipart/form-data for file uploads).
+target: Where to display the response (_self, _blank, etc.).
+name: Name of the form.
+autocomplete: Enables/disables auto-completion (on or off).
+novalidate: Disables form validation.
+accept-charset: Character encodings accepted by the server.
+
+
+
+
+

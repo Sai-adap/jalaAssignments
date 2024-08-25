@@ -1,0 +1,32 @@
+#Create an object "person" with properties firstname and lastname. Display these 
+properties using 2 different ways of accessing
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Access Example</title>
+</head>
+<body>
+    <h1>Person Information</h1>
+    <p id="dotNotation"></p>
+    <p id="bracketNotation"></p>
+
+    <script>
+        // Creating an object with firstname and lastname properties
+        const person = {
+            firstname: "John",
+            lastname: "Doe"
+        };
+
+        // Accessing properties using dot notation
+        const dotNotationDisplay = `Full Name (Dot Notation): ${person.firstname} ${person.lastname}`;
+        document.getElementById('dotNotation').textContent = dotNotationDisplay;
+
+        // Accessing properties using bracket notation
+        const bracketNotationDisplay = `Full Name (Bracket Notation): ${person['firstname']} ${person['lastname']}`;
+        document.getElementById('bracketNotation').textContent = bracketNotationDisplay;
+    </script>
+</body>
+</html>

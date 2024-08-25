@@ -1,0 +1,66 @@
+Write functions to set a cookie, get a cookie and check a cookie in a single program.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Operations</title>
+</head>
+<body>
+    <h1>Cookie Operations Example</h1>
+    <button id="setCookieButton">Set Cookie</button>
+    <button id="getCookieButton">Get Cookie</button>
+    <button id="checkCookieButton">Check Cookie</button>
+    <div id="result"></div>
+
+    <script>
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Function to get a cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Function to check if a cookie exists
+        function checkCookie(name) {
+            const cookie = getCookie(name);
+            if (cookie) {
+                document.getElementById('result').textContent = `Cookie "${name}" exists with value: ${cookie}`;
+            } else {
+                document.getElementById('result').textContent = `Cookie "${name}" does not exist.`;
+            }
+        }
+
+        // Event listeners for buttons
+        document.getElementById('setCookieButton').addEventListener('click', () => {
+            setCookie('username', 'JohnDoe', 7); // Set cookie named 'username' with value 'JohnDoe' for 7 days
+            document.getElementById('result').textContent = 'Cookie "username" set.';
+        });
+
+        document.getElementById('getCookieButton').addEventListener('click', () => {
+            const cookieValue = getCookie('username');
+            document.getElementById('result').textContent = cookieValue ? `Cookie value: ${cookieValue}` : 'Cookie "username" not found.';
+        });
+
+        document.getElementById('checkCookieButton').addEventListener('click', () => {
+            checkCookie('username');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+#Create a grid with of different types
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Grid Layouts</title>
+    <style>
+        /* Basic 2x2 Grid */
+        .grid-basic {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid with Explicit Rows and Columns */
+        .grid-explicit {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 100px 200px;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid with Auto-Fit and Minmax */
+        .grid-auto-fit {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Grid with Named Areas */
+        .grid-named-areas {
+            display: grid;
+            grid-template-areas:
+                'header header header'
+                'sidebar content content'
+                'footer footer footer';
+            grid-template-rows: 100px 1fr 50px;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 10px;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        /* Specific styles for named areas */
+        .header {
+            grid-area: header;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .content {
+            grid-area: content;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Basic 2x2 Grid</h2>
+    <div class="grid-basic">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+
+    <h2>Grid with Explicit Rows and Columns</h2>
+    <div class="grid-explicit">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+    </div>
+
+    <h2>Grid with Auto-Fit and Minmax</h2>
+    <div class="grid-auto-fit">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+
+    <h2>Grid with Named Areas</h2>
+    <div class="grid-named-areas">
+        <div class="grid-item header">Header</div>
+        <div class="grid-item sidebar">Sidebar</div>
+        <div class="grid-item content">Content</div>
+        <div class="grid-item footer">Footer</div>
+    </div>
+</body>
+</html>

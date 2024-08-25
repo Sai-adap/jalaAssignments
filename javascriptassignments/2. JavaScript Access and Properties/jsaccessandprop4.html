@@ -1,0 +1,66 @@
+Create a Counter with the help of getter and setter accessors
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter with Getters and Setters</title>
+    <style>
+        #counter {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #countButton {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter Example with Getters and Setters</h1>
+    <div id="counter">0</div>
+    <button id="countButton">Count</button>
+
+    <script>
+        class Counter {
+            constructor() {
+                this._count = 0;
+            }
+
+            // Getter for count
+            get count() {
+                return this._count;
+            }
+
+            // Setter for count
+            set count(value) {
+                if (value >= 0) {
+                    this._count = value;
+                }
+            }
+
+            // Method to increment count
+            increment() {
+                this.count += 1;
+            }
+        }
+
+        // Create an instance of Counter
+        const counter = new Counter();
+
+        // Function to update the counter display
+        function updateCounterDisplay() {
+            document.getElementById('counter').textContent = counter.count;
+        }
+
+        // Event listener for the button
+        document.getElementById('countButton').addEventListener('click', () => {
+            counter.increment();
+            updateCounterDisplay();
+        });
+
+        // Initialize the display
+        updateCounterDisplay();
+    </script>
+</body>
+</html>

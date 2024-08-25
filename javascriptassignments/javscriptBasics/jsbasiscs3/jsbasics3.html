@@ -1,0 +1,43 @@
+Write a program with FOR/IN loop
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/In Loop Example</title>
+</head>
+<body>
+    <h1>Object Properties</h1>
+    <ul id="propertyList">
+        <!-- Properties will be listed here -->
+    </ul>
+
+    <script>
+        // Example object with different properties
+        const person = {
+            name: "John Doe",
+            age: 30,
+            occupation: "Software Developer",
+            country: "USA"
+        };
+
+        // Function to display object properties
+        function displayProperties() {
+            const propertyList = document.getElementById('propertyList');
+            propertyList.innerHTML = ''; // Clear the list before adding new items
+
+            // Use for...in loop to iterate over object properties
+            for (const key in person) {
+                if (person.hasOwnProperty(key)) {
+                    let li = document.createElement('li');
+                    li.textContent = `${key}: ${person[key]}`;
+                    propertyList.appendChild(li);
+                }
+            }
+        }
+
+        // Display the properties when the page loads
+        displayProperties();
+    </script>
+</body>
+</html>
